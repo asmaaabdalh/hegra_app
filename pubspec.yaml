@@ -1,0 +1,42 @@
+name: hegrafree_quran
+description: Hegra - Simple Quran (no audio) - demo
+publish_to: 'none'
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.2.2
+  google_fonts: ^6.2.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.1
+  qr_flutter: ^4.1.0
+  
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/surah/
+    - assets/quran_image/
+    - assets/metadata.json
+    - assets/pagesQuran.json
+    - assets/verses/
+    - "assets/images/"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.jpeg"
+  adaptive_icon_background: "#0xFFF5F2EA"  
+  adaptive_icon_foreground: "assets/images/logo.jpeg"
+
+flutter_native_splash:
+  color: "#0xFFF5F2EA"   
+  image: "assets/images/logo.jpeg"
+  android_12:
+    image: "assets/images/logo.jpeg"
+    color: "#0xFFF5F2EA"
+
+
