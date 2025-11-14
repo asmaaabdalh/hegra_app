@@ -25,8 +25,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.hegra"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
